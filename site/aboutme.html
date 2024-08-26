@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/cc3019aa6439ef893839b8a0d6d0391d?family=Star+Jedi" rel="stylesheet">
+    <title>SpaceyArt</title><style>
+
+    body{
+
+       margin: 0;
+       background-color: rgb(0, 0, 0);
+
+    }
+
+    .navbar{
+
+
+        display: flex;
+        justify-content: center;
+        width: 99.7%;
+        height: 100%;
+        background-color: rgb(52, 49, 49, 0.80);
+        color: blue;
+        box-shadow: inset 0px 1px 20px;
+        border-style:solid;
+        border-color: red;
+
+    }
+
+    .nav{
+
+        
+        display: flex;
+        gap: 3em;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+
+    }
+
+    .nav li{
+
+        list-style: none;
+        flex-wrap: wrap;
+        color: white;
+        list-style: none;
+        cursor: pointer;
+        font-family: "Star Jedi";
+        font-size:larger;
+
+    }
+
+    .nav li a{
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+.link {
+
+position: relative;
+
+}
+
+.link::before,
+.link::after {
+
+content: '';
+left: 0;
+position: absolute;
+width: 100%;
+height: 3px;
+background-color: #1de964;
+transform: scaleX(0);
+transition: transform 0.25s;
+
+}
+
+.link::before {
+
+top: 1px;
+transform-origin: left;
+
+}
+
+.link::after {
+
+bottom: -2px;
+transform-origin: right;
+
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+
+transform: scaleX(1);
+
+}
+
+.about{
+
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Star Jedi';
+    border: solid #fff702;
+    border-style: double;
+    margin-top: 5%;
+    margin-left: 11%;
+    margin-right: 11%;
+    
+}
+
+.abouth2{
+ 
+    text-align: center;
+    font-size:xx-large;
+}
+
+.article{
+
+    margin-left: 10%;
+    margin-right: 9%;
+    margin-top: 4%;
+    border: solid #fff702;
+    box-shadow: inset 0px 1px 20px;
+    color: greenyellow;
+    
+}
+
+.paragraph{
+
+    margin-left: 10%;
+    margin-right: 9%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-family:'Courier New';
+    color: white; 
+    word-spacing: 10px;
+    line-height: 350%;
+
+
+}
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family:'Gill Sans MT';
+    border: solid #fff702;
+    border-style: double;
+    margin-top: 5%;
+    margin-left: 11%;
+    margin-right: 11%;
+    
+}
+
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        
+        <ul class="nav">
+        
+        <li class="link"><a href="Index.html"><strong>Home</strong></a></li>
+        <li class="link"><a href="portfolio.html"><strong>Portfolio</strong></a></li>
+        <li class="link"><a href="prices.html"><strong>Prices</strong></a></li>
+        <li class="link"><a href="aboutme.html"><strong>About Me</strong></a></li>
+    
+        </ul>
+    
+    </nav>
+
+    <section class="about">
+    
+        <h1 class="abouth2">About Me</h1>
+    
+    </section>
+
+    <article class="article">
+
+           <p class="paragraph"><strong> I am Ali, a Website developer and Digital artist, with a focus on character and website design. I studying 
+            Computer science at PAF kiet University, motivated by animation and video games. I use 2D software to create
+            distinct, intricate characters for video games and graphic novels. In web development, I create aesthetically 
+            beautiful, easily navigable websites that capture the essence of a brand. Industry peers have acknowledged my 
+            work and it has been featured in online galleries. View my portfolio and stay up to date by following me on 
+            social media or via my website.</strong></p>
+
+    </article>
+
+    <footer class="footer">
+
+          <h2 style="font-family: 'Star Jedi'; flex-wrap: wrap;">Contact</h2>
+          <p>mohd.ali46@protonmail.com</p>
+          <p>+92 332 5847765</p>
+          <p>Syed Ali</p>
+
+    </footer>
+
+</body>
+</html>/

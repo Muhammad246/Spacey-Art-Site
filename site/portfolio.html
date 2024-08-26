@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/cc3019aa6439ef893839b8a0d6d0391d?family=Star+Jedi" rel="stylesheet">
+
+    <title>SpaceyArt</title>
+    <style>
+
+    body{
+        
+        background-color: black;
+        margin: 0;
+
+    }
+
+    .nv{
+
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 99.67%;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(52, 49, 49, 0.80);
+        color: blue;
+        box-shadow: inset 0px 1px 20px;
+        border-style:solid;
+        border-color: red;
+
+    }
+
+    .nav{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+
+    }
+
+    .nav li{
+
+        
+        list-style: none;
+        cursor: pointer;
+        font-family: "Star Jedi";
+        font-size:larger;
+
+    }
+
+    .nav li a{
+
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .link {
+
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+
+    }
+
+    .link::before,
+    .link::after {
+
+       content: '';
+       left: 0;
+       position: absolute;
+       width: 100%;
+       height: 3px;
+       background-color: #1de964;
+       transform: scaleX(0);
+       transition: transform 0.25s;
+
+}
+
+    .link::before {
+
+        top: 1px;
+        transform-origin: left;
+
+}
+
+    .link::after {
+
+        bottom: -2px;
+        transform-origin: right;
+
+}
+
+    .link:hover::before,
+    .link:hover::after,
+    .active::before,
+    .active::after {
+
+        transform: scaleX(1);
+
+}
+
+    .pfp{
+
+        position: relative;
+        top: 100px;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #010101;
+    
+    }
+
+    .pfp h1{
+
+        font-family: "Star Jedi";
+        text-align: center;
+        color: chartreuse;
+        
+    }
+
+    .pfp h2{
+
+        text-align: center;
+        font-family: "Star Jedi";
+        color: rgb(255, 255, 255);
+        
+        
+    }
+
+    .container{
+
+        position: relative;
+        top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+        gap: 2em;
+        padding-top: 8%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .contain{
+
+        border: solid rgb(255, 255, 255);
+        min-height: 100%;
+        min-width: 100%;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 20% 30%;
+
+    }
+
+    .contain img{
+
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 20% 30%;
+
+    }
+
+    .contain1{
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 40%;
+        margin-bottom: 40%;
+        border: 2px solid rgb(255, 253, 253);
+        border-radius: 2% 20% 2% 20%;
+        flex-wrap: wrap;
+
+
+    }
+
+    .contain1 p{
+        
+        text-align: center;
+        font-family: 'DM Sans';
+        color: rgb(255, 255, 255);
+        font-size: 1.15rem;
+        font-weight: 500;
+        font-style: var(50%);
+
+    }
+
+    .pfpname{
+
+        position: relative;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        font-family: "Star Jedi";
+        color: rgb(255, 255, 255);
+        font-size:xx-large;
+    
+
+    }
+
+    .pfpname p{
+
+        text-align: center;
+
+    }
+
+    .description{
+
+        padding-top: 5%;   
+        padding-bottom: 2%;
+        padding-left: 0.8%;
+        padding-right: 1%;
+        
+    }
+
+    .desc{
+
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .pic1{
+
+        flex: 3;
+        border: 2px solid rgb(0, 0, 0);  
+        margin-top: 20px;
+        margin-left: 3px;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .pic1 img{
+        
+        display: flex;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+
+     &:hover {
+
+        flex: 3;
+        align-self: center;
+        box-shadow: 1px 1px 10px 2px #fff;
+        transition: scale 0.25s ease-in;
+        scale: 1.03;
+
+        }
+
+    }
+
+</style>
+</head>
+<body>
+        
+        <nav class="nv">
+        <ul class="nav">
+        
+        <li class="link"><a href="Index.html"><strong>Home</strong></a></li>
+        <li class="link"><a href="portfolio.html"><strong>Portfolio</strong></a></li>
+        <li class="link"><a href="prices.html"><strong>Prices</strong></a></li>
+        <li class="link"><a href="aboutme.html"><strong>About Me</strong></a></li>
+    
+        </ul>
+        </nav>    
+
+    <header class="pfp">
+
+        <h1>Portfolio</h1>
+        <h2>Dnd characters</h2>
+
+    </header>
+
+    <div class="container">
+
+        <div class="contain"><img src="Images/OuuN5YQ.png"></div>
+        <div class="contain1"><p>This is Chromagil from TeamFourStar's DnD podcast style twitch streams. He's a myconid warden who acts as the party's tank/healer. Love his character and personality and I just needed to draw him.</p></div>
+
+        <div class="contain"><img src="Images/zbmYfup%20-%20Copy.png"></div>
+        <div class="contain1"><p>Nobeta, from the game Little Witch Nobeta.
+        Drew this when I found out the game was coming out relatively soon. Really like how this one turned out.
+        Spent a little too much time on the Rune in the background, despite it being covered by the actual character for the most part. Still, really like it :3</p></div>
+
+        <div class="contain"><img src="Images/LrJdE5T.png"></div>
+        <div class="contain1"><p>Commission I did for a friend. This was a Dwarf character for him and his friends' DnD sessions. I really like how it turned out. ^^</p></div>    
+
+        <div class="contain"><img src="Images/LgTOTdY.png"></div>
+        <div class="contain1"><p>This is Deion, or better known as SeeReax on YouTube in the art style of the earlier parts of JoJo's Bizarre Adventure.</p></div>
+        
+        <div class="contain"><img src="Images/rPJtgOe%20-%20Copy.png"></div>
+        <div class="contain1"><p>A friend of mine asked me to update his literally 15 year old profile picture for him, so I made him this. </p></div>
+
+    </div>
+
+    <div class="pfpname"><p>profile</p><p>pictures</p></div>
+
+    
+    <article class="description">
+
+        <div class="desc">
+
+        <div class="pic1"><img src="Images/pfp.jpg"></div>
+        <div class="pic1"><img src="Images/Mnadolarin.png"></div>
+        <div class="pic1"><img src="Images/D7FB77A8-7AF7-4B81-9EF7-7226E05C51B4.jpg"></div>
+
+        </div>
+
+        <div class="desc">
+
+        <div class="pic1"><img src="Images/CATo%20NON%20PREVIEW.jpg"></div>
+        <div class="pic1"><img src="Images/STUD%20PANDA.jpg"></div>
+        <div class="pic1"><img src="Images/POUTINE1.png"></div>
+        
+        </div>
+        
+        <div class="desc">
+
+        <div class="pic1"><img src="Images/original4.png"></div>
+        <div class="pic1"><img src="Images/original2.png"></div>
+        <div class="pic1"><img src="Images/original3.png"></div>
+        
+        </div>
+        
+        <div class="desc">
+        
+        <div class="pic1"><img src="Images/original1.png"></div>
+        <div class="pic1"><img src="Images/original5.png"></div>
+        <div class="pic1"><img src="Images/ELEPHANT%201%20ORIGINAL.jpg"></div>
+        
+        </div>
+
+
+    </article>
+
+</body>
+</html>

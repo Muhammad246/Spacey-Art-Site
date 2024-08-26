@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/cc3019aa6439ef893839b8a0d6d0391d?family=Star+Jedi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>SpaceyArt</title><style>
+
+    body{
+
+        background-color: black;
+        margin: 0;
+    }
+
+    .header{
+
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content:center;
+        align-content: center;
+        min-width: 99.67%;
+        height: 70px;
+        z-index: 2;
+        background-color: rgb(52, 49, 49, 0.80);
+        background-size: cover;
+        color: blue;
+        box-shadow: inset 0px 1px 20px;
+        border-style:solid;
+        border-color: red;
+        
+        
+    }
+
+    .h2 {
+       
+        position: absolute;
+        align-self: center;
+        top: -1pc;
+        font-size:xx-large;
+        color: rgb(255, 255, 0);
+        font-family: "Star Jedi";
+
+    }
+
+    .nv{
+
+        display: flex;
+        justify-content: center;
+        width: 99.98%;
+        position: relative;
+        top: 100px;
+        background-color: #000000;
+        border-bottom: solid #ffffff;
+        
+    }
+
+    .nav{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+         
+    }
+
+    .nav li{
+
+        color: white;
+        background-color: black;
+        list-style: none;
+        cursor: pointer;
+        font-family: "Star Jedi";
+        font-size:larger;
+    
+    }
+
+    .nav li a{
+
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .link {
+       
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .link::before,
+    .link::after {
+        
+        content: '';
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #1de964;
+        transform: scaleX(0);
+        transition: transform 0.25s;
+    
+    }
+
+    .link::before {
+        
+        top: 1px;
+        transform-origin: left;
+    
+    }
+
+    .link::after {
+        
+        bottom: -2px;
+        transform-origin: right;
+    
+    }
+
+    .link:hover::before,
+    .link:hover::after,
+    .active::before,
+    .active::after {
+      
+        transform: scaleX(1);
+    
+    }
+
+    .imga{
+
+        display: flex;
+        background-size: cover;
+        position: relative;
+        top: 100px;
+        
+    }
+
+    .imga img{
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    @media (max-width: 470px){
+
+        .img img{ width: 250px; 
+                  
+        }
+
+    }
+
+    .container{
+
+        display: flex;
+        position: absolute;
+        left: 0;
+        border: 1px solid #fff;
+        border-radius: 10%;
+        width: 440px;
+        height: 400px;
+        margin-left: 6%;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        margin-right: 2%;
+        backdrop-filter: blur(4px);
+        box-shadow: 1px 1px 1px 1px whitesmoke;
+
+    }
+
+    @media (max-width: 1216px){
+
+        .container{
+
+            width: 340px;
+            min-height: 430px;
+
+        }
+    } 
+
+    @media (max-width: 755px){
+
+        .container{
+
+            width: 250px;
+            
+
+        }
+    }
+
+    @media (max-width: 490px){
+
+.container{
+
+    width: 300px;
+
+
+}
+}
+
+    .container p{
+
+        display: flex;
+        text-align:justify;
+        padding-top: 4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        color: #fff;
+        font-family: 'DM Sans';
+        font-size: 1.15rem;
+        opacity: 70%;
+
+    }
+
+    @media (max-width: 755px){
+
+.container p{
+
+    font-size: 0.7rem;
+
+    }
+}
+
+    @media (max-width: 490px){
+
+    .container p{
+
+        font-size: 0.5rem;
+
+        }
+    }
+
+    .skills{
+
+        display: flex;  
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 1em;
+        position: relative;
+        top: 80px;
+        min-height: 200px;
+        background-color: rgb(0, 0, 0);
+        border: solid #ffffff;
+
+    }
+
+    .head{
+
+        display: flex;
+        flex-wrap: wrap;
+        color: red;
+        font-family: "Star Jedi";
+        min-width: 1%;
+        min-height: 10%;
+        font-size: x-large;
+
+    }
+
+    .lan{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 2em;
+        height: fit-content;
+        width: 100%;
+
+    }
+
+    .lan li{
+
+        display: flex;;
+        flex-wrap: wrap;
+        flex-direction: row;
+        color: aqua;
+        font-family: "Star Jedi";
+        font-size: large;
+
+    }
+
+    .footer{
+
+        position: relative;
+        top: 80px;
+        text-align: center;
+        width: 100%;
+        padding-top: 6%;
+        background-image: url("Images/Banner.jpg");
+        background-size: cover;
+        padding-bottom: 5%;
+
+    }
+
+    .footer h1{
+
+        color: #fff;
+        font-family: "Star Jedi";
+
+    }
+
+    .foot{
+
+        text-align: center;
+        padding-bottom: 2%;
+
+    }
+
+.button1 {
+
+    background-color:white; 
+    color: rgb(0, 0, 0); 
+    cursor: pointer;
+    height: 50px;
+    width: 110px;
+
+    }
+
+.button1:hover {
+
+    transition-duration: 0.4s;
+    transition: scale 0.25s ease-in;
+    scale: 1.09;
+    background-color: #d316d0;
+    border: solid rgb(242, 238, 109);
+
+    }
+
+.button1 a{
+
+     text-decoration: none;
+     color: #0f175a;
+
+}
+
+.button2 {
+
+    background-color: white; 
+    cursor: pointer;
+    height: 50px;
+    width: 110px;
+
+    }
+
+.button2:hover {
+  
+    transition-duration: 0.4s;
+    transition: scale 0.25s ease-in;
+    scale: 1.09;
+    background-color: #2900f5;
+    border: solid rgb(71, 122, 249);
+    
+    }
+
+.button2 a{
+
+    text-decoration: none;
+    color: #0f175a;
+
+}
+
+.button3 {
+
+    background-color: white; 
+    color: rgb(30, 23, 23); 
+    border: 2px solid #000000;
+    cursor: pointer;
+    height: 50px;
+    width: 110px;
+
+    }
+
+.button3:hover {
+
+    transition-duration: 0.4s;
+    transition: scale 0.25s ease-in;
+    scale: 1.09;
+    background-color: #4f79ee;
+    border: solid rgb(235, 234, 235);
+
+    }
+
+.button3 a{
+
+    text-decoration: none;
+    color: #0f175a;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h2 class="h2"><strong>SPACEYART</strong></h2>
+
+    </header>
+    
+
+    <nav class="nv">
+    <ul class="nav">
+    
+    <li style="text-decoration: none;" class="link"><strong>Home</strong></a></li>
+    <li class="link"><a href="portfolio.html"><strong>Portfolio</strong></a></li>
+    <li class="link"><a href="prices.html"><strong>Prices</strong></a></li>
+    <li class="link"><a href="aboutme.html"><strong>About Me</strong></a></li>
+
+    </ul>
+    </nav> 
+
+    <div class="imga">
+
+    <img src="Images/darthvader.jpg">
+
+    <div class="container">   
+    
+    <p>Greetings, I am Ali, a Front-end developer and Digital artist, with a focus on character and website design. I studying Computer science at PAF kiet University, motivated by animation and video games. I use 2D software to create distinct, intricate characters for video games and graphic novels. In web development, I create aesthetically beautiful, easily navigable websites that capture the essence of a brand. Industry peers have acknowledged my work and it has been featured in online galleries. View my portfolio and stay up to date by following me on social media or via my website.</p>
+    
+    </div>
+    
+    </div>
+
+    <article class="skills">
+        
+        <p class="head">Skills</p>
+
+        <ul class="lan">
+
+        <li class="lang">HTML</li>
+        <li class="lang">CSS</li>
+        <li class="lang">Javascript</li>
+        <li class="lang">Csharp</li>
+        <li class="lang">Adobe illustrator</li>
+        <li class="lang">Adobe Photoshop</li>
+
+        </ul>
+
+    </article>
+
+    <footer class="footer">
+        
+            <h1>REACH ME</h1>
+
+        <div class="foot">
+       
+        <button class="button1" style="font-family: 'Star Jedi'; font-size:medium;"><a href="https://www.instagram.com/spacey___art/" target="_blank">instagram</a></button>
+        <button class="button2"  style="font-family: 'Star Jedi'; font-size:medium;"><a href="https://discord.gg/gMsDxYyC" target="_blank">Discord</a></button>
+        <button class="button3"  style="font-family: 'Star Jedi'; font-size:medium;"><a href="https://www.x.com/Space__Art/" target="_blank">Twitter</a></button>
+        
+        </div>
+
+    </footer>
+
+</body>
+</html>
